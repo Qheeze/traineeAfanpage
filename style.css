@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Edu TAS Beginner', cursive;
+    letter-spacing: 1px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/resources/bgimg02.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -30px; */
+}
+nav img{
+    width: 70px;
+}
+.navi-links{
+    flex: 1;
+    text-align: right;
+}
+.navi-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navi-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:13px
+}
+.navi-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: all ease-in-out 0.3s ;
+}
+.navi-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left:80%;
+    transform: translate(-80%, -50%);
+    text-align: left;
+    letter-spacing: 1px;
+    margin-top: -30px;
+}
+.text-box h1{
+    font-size: 70px;
+    font-weight: 450;
+}
+.text-box h1 span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+.hr-btn{
+    position: relative;
+    display: inline-block;
+    color: rgb(21, 19, 19);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 9px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #fff;
+    font-weight: 500;
+    outline: 2px solid white;
+    outline-offset: 5px;
+    transition: all ease-in-out 300ms;
+    z-index: 1;
+}
+.hr-btn:hover{
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .hr-btn{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .navi-links ul li{
+        display: block;
+        padding-bottom: 15px;
+    }
+    .navi-links ul {
+        padding: 20px;
+    }
+    .navi-links{
+        position: absolute;
+        background: rgb(0, 0, 0);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -20px;
+        text-align: center;
+        z-index: 2;         
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        text-align: right;
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
