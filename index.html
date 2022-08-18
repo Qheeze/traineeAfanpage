@@ -5,37 +5,140 @@
     <title>TraineeA Fanpage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<section class = 'header'>
+<section class = 'header' id="home">
         <nav>
-            <a href="index.html">
+            <a href="#home">
                 <img src="/resources/logo.webp" alt="">
             </a>
-            <div class="navi-links">
-                <i class="fa fa-window-close-o" ></i>
+            <div class="navi-links" id="naviLinks">
+                <i class="fa fa-window-close-o" onclick="hMenu()"></i>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">TRAINEE A</a></li>
-                        <li><a href="">MEMBERS</a></li>
-                        <li><a href="">MV</a></li>
-                        <li><a href="">COMPANY</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#traineeA">TRAINEE A</a></li>
+                        <li><a href="#members">MEMBERS</a></li>
+                        <li><a href="#mv">MV</a></li>
+                        <li><a href="#company">COMPANY</a></li>
                     </ul>
             </div>
-            <i class="fa fa-bars" ></i>
+            <i class="fa fa-bars" onclick="sMenu()"></i>
         </nav>
         <div class="text-box">
-            <a href="" class="hr-btn">Get to know Us</a>
+            <a href="#traineeA" class="hr-btn">Get to know Us</a>
             <!-- <a href="" class="hr-btn-tr">Get to know Us</a> -->
             <h1>The new Kpop group <span>Trainee A</span> </h1>
             <p>Debuting in 2022, stay tuned!</p>
         </div>
 </section>
+<!-- ----------------Trainee A------------ -->
+<section class = 'traineeA' id="traineeA">
+    <h1>TraineeA</h1>
+    <p>Trainee A is the temporary name of BigHit Music's pre-debut seven-member boy group. They will make their debut sometime in 2022. </p>
+    <div class="some">
+        <div class="som-col">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. </p>
+        </div>
+        <div class="som-col">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. </p>
+        </div>
+        <div class="som-col">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. </p>
+        </div>
+    </div>
+</section>
+<section class = 'members' id="members">
+    <h1>Members</h1>
+    <p>Get to know these cuties</p>
+    <div class="memb-col">
+        <div class="mem">
+            <img src="/resources/yorch.jpg" >
+            <div class = 'top'>
+                <h2>Stage Name: Yorch (요치)</h2>
+            </div>
+        </div>
+        <div class="mem">
+            <img src="/resources/leo.jpg" alt="">
+            <div class="top">
+                <h2>Stage Name: Leo (리오)</h2>
+            </div>
+        </div>
+        <div class="mem">
+            <img src="/resources/Sangwon-상원ongwon.png" alt="">
+            <div class="top">
+                <h2>Stage Name: Sangwon (상원)</h2>
+            </div>
+        </div>
+        <div class="mem">
+            <img src="/resources/woochan.webp" alt="">
+            <div class="top">
+                <h2>Stage Name: Woochan (우찬)</h2>
+            </div>
+        </div>
+        <div class="mem">
+            <img src="/resources/james.jpg" alt="">
+            <div class="top">
+                <h2>Stage Name: James ( 제임스)</h2>
+            </div>
+        </div>
+        <div class="mem">
+            <img src="/resources/jj.jpg" alt="">
+            <div class="top">
+                <h2>Stage Name: JJ (제이제이)</h2>
+            </div>
+        </div>
+        <div class="mem">
+            <img src="/resources/jihoon.png" alt="">
+            <div class="top">
+                <h2>Stage Name: Jihoon (지훈)</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class = 'mv' id="mv">
+    <h1>Trainee A's <span>Pre-Debut MV!</span></h1>
+    <p>Shot on Iphone 12 Pro, no budget, no fancy outffits,<br> just fun!</p>
+    
+    <div class="iframe-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ecs1ksfafFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="bh" id="company">
+    
+    <h1>Check out <span>BigHit</span><br> Official Website</h1>
+    <a href="https://ibighit.com/" target="_blank" class="hr-btn">Visit Us</a>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12660.210220110372!2d127.05759012656114!3d37.50667859902097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f19d8a87b5%3A0x960ce00631ec7836!2sBighit%20Entertainment!5e0!3m2!1spl!2s!4v1659340192950!5m2!1spl!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+<!-- ==============footer=========== -->
+<section class="abt-us">
+    <h2>About Us</h2>
+    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/pages/category/Concert-Tour/BigHit-Entertainment-372266526503260/" target="_blank">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/bigihit_ent/" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<script>
+    // ===========JS for toggle menu============
+    const naviLinks = document.getElementById('naviLinks')
+    function sMenu(){
+        naviLinks.style.right = '0';
+    }
+    function hMenu(){
+        naviLinks.style.right = '-200px';
+    }
+</script>
 </body>
 
 </html>
